@@ -1,5 +1,5 @@
 def find_pair_with_sum(arr, target):
-    seen = set()
+    seen = set() # hashset
     for num in arr:
         if target - num in seen:
             print(f"Pair found: ({num}, {target - num})")
